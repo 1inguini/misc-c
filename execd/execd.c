@@ -4,8 +4,20 @@
 #include <nolibc/nolibc.h>
 #define NOLIBC_IGNORE_ERRNO
 
+typedef ssize_t syscall_result;
+char usage[] = "execd: usage: execd $SUPERVISE_DIR $COMMAND $ARG1 $ARG2...\n";
+
+void execd_exit()
+{
+  sys_write(STDERR_FILENO, usage, strlen(usage));
+  exit(EXIT_FAILURE);
+}
+
 int main(int argc, char const *argv[])
 {
-  char message[] = "Hello World!\n";
-  sys_write(STDOUT_FILENO, message, strlen(message));
+  if (argc < 2) // コマンド引数は2以上必要
+  {
+    execd_exit();
+  }
+  const char *sv_dir = argv[1];
 }
