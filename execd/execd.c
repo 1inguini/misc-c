@@ -7,7 +7,9 @@
 typedef ssize_t syscall_result;
 char usage[] = "execd: usage: execd $SUPERVISE_DIR $COMMAND $ARG1 $ARG2...\n";
 
-void execd_exit()
+// 前提が満たされてないことが確認されたときに早期リターンする用
+// ログを吐いたあとやユーザーにデバッグとかを求めるときは使わない
+void execd_bye()
 {
   sys_write(STDERR_FILENO, usage, strlen(usage));
   exit(EXIT_FAILURE);
@@ -17,7 +19,7 @@ int main(int argc, char const *argv[])
 {
   if (argc < 2) // コマンド引数は2以上必要
   {
-    execd_exit();
+    execd_bye();
   }
   const char *sv_dir = argv[1];
 }
