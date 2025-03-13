@@ -20,3 +20,9 @@ Linuxの[nolibc](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/li
 ### LICENSE
 
 CC0 1.0 Universal
+
+## LICENSE
+
+各サブディレクトリ参照
+
+* `include/nolibc` is imported from Linux, so it's GPL-2.0
