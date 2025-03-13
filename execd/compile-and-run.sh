@@ -5,7 +5,7 @@ IFS='
 
 cd "$(dirname "$0")"
 
-repo=$(jj root)
+repo=$(jj root || git rev-parse --show-toplevel)
 
 cc() {
   clang "$@"
