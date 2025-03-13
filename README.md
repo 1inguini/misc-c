@@ -13,6 +13,10 @@ Based on [D. J. Bernstein](https://cr.yp.to/djb.html)'s [daemontools](https://cr
 execd /run/execd/yes /usr/bin/yes Hello World!
 ```
 
+### memo
+
+Linuxの[nolibc](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/include/nolibc)をexecdに使ってみる?
+
 ### LICENSE
 
 CC0 1.0 Universal
