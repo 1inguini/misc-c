@@ -13,15 +13,15 @@ Inspired by
 * [D. J. Bernstein](https://cr.yp.to/djb.html)'s [daemontools](https://cr.yp.to/daemontools.html).
 * `systemd-run`
 
+### Dependency
+
+* [nolibc](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/include/nolibc) from Linux kernel repositry
+
 ### Usage
 
 ``` sh
 execd /run/execd/yes /usr/bin/yes Hello World!
 ```
-
-### memo
-
-Linuxの[nolibc](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/include/nolibc)をexecdに使ってみる?
 
 ### LICENSE
 
