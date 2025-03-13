@@ -5,7 +5,13 @@ Miscellaneous C language scripts.
 ## execd (WIP)
 
 Ad-hoc supervisior daemon.
-Based on [D. J. Bernstein](https://cr.yp.to/djb.html)'s [daemontools](https://cr.yp.to/daemontools.html).
+
+Inspired by
+
+* [s6](https://skarnet.org/software/s6/index.html) from [skarnet](https://skarnet.org/)
+* [supervise-daemon](https://github.com/OpenRC/openrc/tree/master/src/supervise-daemon) from [OpenRC](https://github.com/OpenRC/openrc/)
+* [D. J. Bernstein](https://cr.yp.to/djb.html)'s [daemontools](https://cr.yp.to/daemontools.html).
+* `systemd-run`
 
 ### Usage
 
