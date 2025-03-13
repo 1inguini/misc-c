@@ -4,6 +4,13 @@
 #include <nolibc/nolibc.h>
 #define NOLIBC_IGNORE_ERRNO
 
+// `sigprocmask`はnolibcにない?
+ssize_t sys_rt_sigprocmask(
+    int how, const sigset_t *set, sigset_t *oldset, size_t sigsetsize)
+{
+  return my_syscall4(__NR_rt_sigprocmask, how, set, oldset, sigsetsize);
+}
+
 typedef ssize_t syscall_result; // `sys_*`の返り値
 
 char usage[] = "execd: usage: execd $SUPERVISE_DIR $COMMAND $ARG1 $ARG2...\n";
@@ -49,4 +56,9 @@ int main(int argc, char const *argv[])
     return EXIT_FAILURE;
   }
   // END self-pipe
+
+  // BEGIN modify-signal-handling
+  // `sigprocmask`はnolibcにない?
+
+  // END modify-signal-handling
 }
