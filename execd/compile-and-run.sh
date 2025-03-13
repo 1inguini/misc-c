@@ -11,4 +11,4 @@ cc() {
   clang "$@"
 }
 
-cc -I"$repo/include" execd.c -o ./execd.out && ./execd.out "$@"
+cc -nostdlib -I"$repo/include" execd.c -o ./execd.out && ./execd.out "$@"
