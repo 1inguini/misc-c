@@ -15,5 +15,5 @@ prog=$1
 shift
 
 mkdir -p out/example/
-cc arch/target/crt/*.s "src/start.c" "example/$prog.c" -o "./example/$prog.out"
+cc arch/target/crt/*.s "src/crt.c" "example/$prog.c" -o "./example/$prog.out"
 "./example/$prog.out" "$@"
