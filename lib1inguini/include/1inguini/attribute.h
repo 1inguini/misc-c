@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: MIT
+// Copyright © 2025 1inguini.
+// Based on musl libc licensed under MIT license
+// Copyright © 2005-2020 Rich Felker, et al.
+
 #ifndef LIB1INGUINI_ATTRIBUTE
 #define LIB1INGUINI_ATTRIBUTE
 
