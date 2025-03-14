@@ -7,7 +7,7 @@
 #include <1inguini/syscall.h>
 
 #define START "_start"
-#include "../arch/target/crt_arch.h"
+#include <1inguini/arch/target/crt_arch.h>
 
 int main(int argc, const char *argv[]);
 weak void _init(); // ?
