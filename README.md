@@ -4,9 +4,9 @@ Miscellaneous C language scripts.
 
 ## lib1inguini (WIP)
 
-Library to use when ditching libc.
+libc alternative.
 
-libcを捨てるときに代わりに使うやつ。
+libcの代わりに使うやつ。
 
 ## execd (WIP)
 
