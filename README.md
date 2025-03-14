@@ -23,12 +23,10 @@ Inspired by
 execd /run/execd/yes /usr/bin/yes Hello World!
 ```
 
-### LICENSE
-
-CC0 1.0 Universal
-
 ## LICENSE
 
-各サブディレクトリ参照
+misc-c as a whole is licensed under the Creative Commons Zero v1.0 Universal (CC0-1.0)
 
-* `include/nolibc` is imported from Linux, so it's GPL-2.0
+Copyright © 2025 1inguini. (Should I write this notice for CC0-1.0?)
+
+Portions of this software are derived from third-party works. Refer each subdirectories for detail.
