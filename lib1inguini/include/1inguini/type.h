@@ -8,7 +8,7 @@
 #define TYPEDEF typedef
 #define STRUCT struct
 #define UNION union
-#include "../../arch/target/bits/alltypes.h.in"
+#include "arch/target/bits/alltypes.h.in"
 #include "alltypes.h.in"
 #undef TYPEDEF
 #undef STRUCT
