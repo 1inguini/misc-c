@@ -24,5 +24,6 @@ Portions of this software are derived from third-party works:
 
 * musl libc v1.2.5 `Copyright © 2005-2020 Rich Felker, et al.` licensed under the standard MIT License.
   * `arch/`: From `arch/` and `crt/`.
+    (Actually this part doesn't need copyright and permission notice according to musl's COPYRIGHT file .)
   * `include/1inguini/attribute.h`: From `src/include/features.h`
   * And more...
