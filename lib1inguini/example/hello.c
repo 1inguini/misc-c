@@ -3,9 +3,9 @@
 
 #include <1inguini/1inguini.h>
 
-size_t a;
-
 int main(int argc, char const *argv[])
 {
-  return __syscall3(__NR_write, 1, (long)&"Hello World!\n", 13);
+  ssize_t res = __syscall3(__NR_write, 1, (size_t)&"Hello World!\n", 13);
+  // `write` system call returns the number of bytes written on success, -1 on failure.
+  return res < 0; // 0 is success in exit code, but in boolean operation it's false.
 }
