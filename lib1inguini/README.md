@@ -1,8 +1,8 @@
 # lib1inguini
 
-Library to use when ditching libc.
+libc alternative.
 
-libcを捨てるときに代わりに使うやつ。
+libcの代わりに使うやつ。
 
 ## Current status
 
