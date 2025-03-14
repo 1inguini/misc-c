@@ -1,6 +1,14 @@
 # lib1inguini
 
-## Architecture
+Library to use when ditching libc.
+
+libcを捨てるときに代わりに使うやつ。
+
+## Current status
+
+"Hello World!"はできた。
+
+## Selecting target architecture
 
 `ln -s $TARGET_ARCH ./arch/target`
 

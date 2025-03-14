@@ -2,26 +2,15 @@
 
 Miscellaneous C language scripts.
 
+## lib1inguini (WIP)
+
+Library to use when ditching libc.
+
+libcを捨てるときに代わりに使うやつ。
+
 ## execd (WIP)
 
-Ad-hoc supervisior daemon.
-
-Inspired by
-
-* [s6](https://skarnet.org/software/s6/index.html) from [skarnet](https://skarnet.org/)
-* [supervise-daemon](https://github.com/OpenRC/openrc/tree/master/src/supervise-daemon) from [OpenRC](https://github.com/OpenRC/openrc/)
-* [D. J. Bernstein](https://cr.yp.to/djb.html)'s [daemontools](https://cr.yp.to/daemontools.html).
-* `systemd-run`
-
-### Dependency
-
-* [nolibc](https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/include/nolibc) from Linux kernel repositry
-
-### Usage
-
-``` sh
-execd /run/execd/yes /usr/bin/yes Hello World!
-```
+Ad-hoc supervisior daemon without libc.
 
 ## LICENSE
 
