@@ -3,11 +3,14 @@
 // Based on musl libc licensed under MIT license
 // Copyright © 2005-2020 Rich Felker, et al.
 
+#ifndef LIB1INGUINI_MAIN_H
+#define LIB1INGUINI_MAIN_H
+
 #include <1inguini/attribute.h>
 #include <1inguini/syscall.h>
 
 #define START "_start"
-#include "../arch/target/crt_arch.h"
+#include "../../arch/target/crt_arch.h"
 
 int main(int argc, const char *argv[]);
 weak void _init(); // ?
@@ -47,3 +50,5 @@ void _start_c(long *p)
   __asm__("" : "+r"(stage2) : : "memory");
   stage2(main, argc, argv);
 }
+
+#endif

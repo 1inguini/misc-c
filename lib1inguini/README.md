@@ -26,4 +26,5 @@ Portions of this software are derived from third-party works:
   * `arch/`: From `arch/` and `crt/`.
     (Actually this part doesn't need copyright and permission notice according to musl's COPYRIGHT file .)
   * `include/1inguini/attribute.h`: From `src/include/features.h`
+  * `include/1inguini/main.h`: From `src/crt/crt1.h`
   * And more...
