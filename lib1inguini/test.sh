@@ -15,5 +15,6 @@ prog=$1
 shift
 
 mkdir -p out/example/
-cc arch/target/crt/*.s "example/$prog.c" -o "./example/$prog.out"
+cc -r arch/target/crt/*.s "src/crt.c" -o crt.o # relocatable object file
+cc crt.o "example/$prog.c" -o "./example/$prog.out"
 "./example/$prog.out" "$@"
